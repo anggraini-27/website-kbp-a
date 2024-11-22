@@ -1,0 +1,97 @@
+/* Mengatur latar belakang dengan gradasi warna merah dan pink */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #FF4B6E, #FF8DAA, #FFB6C1); /* Gradasi merah ke pink */
+    background-size: 400% 400%; /* Membuat transisi warna lebih dinamis */
+    animation: gradient 10s ease infinite; /* Animasi latar belakang warna */
+}
+
+/* Animasi perubahan warna latar belakang */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Menambahkan gambar bunga tulip sebagai latar belakang */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://png.pngtree.com/background/20230426/original/pngtree-an-old-field-of-white-and-red-tulips-picture-image_2487532.jpg'); 
+    background-position: center;
+    opacity: 0.1; /* Mengatur transparansi gambar */
+    z-index: -1; /* Menempatkan gambar di belakang konten */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang formulir agar lebih jelas */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea, input[type="submit"] {
+    padding: 10px;
+    margin: 5px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+/* Gaya untuk tombol Hapus dan Edit */
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.delete {
+    background-color: #f44336;
+    color: white;
+}
